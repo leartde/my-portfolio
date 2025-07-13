@@ -7,8 +7,10 @@ import jobsync from "./assets/jobs.png";
 import techinsight from "./assets/techinsight.png";
 import wordle from "./assets/wordle.png";
 import internstellar from "./assets/internstellar.png";
+import digital_school from "./assets/digital-school.jpg"
+import go from "./assets/go.png"
 function App() {
-  const skills = ["C#","ASP.NET Core","Java","TypeScript","PHP","HTML","CSS",
+  const skills = ["C#","ASP.NET Core","Java","TypeScript","PHP","Go","HTML","CSS",
   "React","Tailwind","Laravel","SQL","Redis"];
 
   return (
@@ -30,7 +32,7 @@ function App() {
         <h3 className="font-bold text-2xl">Experience</h3>
         <div className="flex items-center gap-2 p-2">
           <img className="border-gray-600/80 border w-12 h-12 rounded-full" alt="Starlabs Logo"
-               src={starlabs}/>
+               src={starlabs as string}/>
           <div className="flex flex-col gap-1 text-sm">
             <p className="font-medium">Software engineering intern at StarLabs</p>
             <p className="text-gray-700/70">Jan 2024 - April 2024</p>
@@ -43,7 +45,15 @@ function App() {
         <h3 className="font-bold text-2xl">Education</h3>
         <div className="flex items-center gap-2 p-2">
           <img className="border-gray-600/80 border w-12 h-12 rounded-full" alt="Ubt Logo"
-               src={ubt}/>
+               src={digital_school as string}/>
+          <div className="flex flex-col gap-1 text-sm">
+            <p className="font-medium">Front end development course at Digital School</p>
+            <p className="text-gray-700/70">Nov 2019 - Jun 2020</p>
+          </div>
+        </div>
+        <div className="flex items-center gap-2 p-2">
+          <img className="border-gray-600/80 border w-12 h-12 rounded-full" alt="Ubt Logo"
+               src={ubt as string}/>
           <div className="flex flex-col gap-1 text-sm">
             <p className="font-medium">Bachelors degree in Computer Science and Engineering at UBT</p>
             <p className="text-gray-700/70">Sep 2021 - Sep 2024</p>
@@ -55,7 +65,7 @@ function App() {
       <div className="flex flex-col gap-2 ">
         <h3 className="font-bold text-2xl">Skills</h3>
         <div className="flex flex-wrap gap-2 w-3/4">
-          {skills.map((skill)=> (
+          {skills.map((skill) => (
             <p id={skill} className="border font-medium text-sm border-gray-900/80 p-1 rounded-lg">{skill}</p>
           ))}
         </div>
@@ -66,17 +76,19 @@ function App() {
       <div className="flex flex-col gap-2">
         <h3 className="font-bold text-2xl">My projects</h3>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-          <Project title="JobSync" banner={jobsync} date="Mar 2025 - Jun 2025"
+          <Project title="JobSync" banner={jobsync as string} date="Mar 2025 - Jun 2025"
                    description="A modern job marketplace web application built with ASP.NET Core Web API, React.js, TypeScript, and TailwindCSS." technologies={
             ["ASP.NET Core","Entity Framework","SQL Server","Redis","React","TypeScript","Tailwind","Cloudinary","JWT","MailTrap"]
           } url="https://github.com/leartde/job-sync"/>
-          <Project title="TechInsight" banner={techinsight} date="Mar 2025 - Jun 2025"
+          <Project title="TechInsight" banner={techinsight as string} date="Mar 2025 - Jun 2025"
                    description="A comprehensive blogging platform  designed to share knowledge on a wide array of technology topics." technologies={
             ["ASP.NET Core","Entity Framework","SQL Server","React","JavaScript","Tailwind"]
           } url="https://github.com/leartde/TechInsight"/>
-          <Project title="Wordle Clone" banner={wordle} date="Jun 2025" description="A clone of the popular puzzle game 'Wordle' built with React. "  technologies={["React","TypeScript"]}
+          <Project title="Wordle Clone" banner={wordle as string} date="Jun 2025" description="A clone of the popular puzzle game 'Wordle' built with React. " technologies={["React","TypeScript"]}
                    url="https://leartde.github.io/wordle-copy/"/>
-          <Project title="Hotel Management System" banner={internstellar} date="Jan 2024 - Apr 2024" description="Contributed on a system to manage hotel bookings during my internship at StarLabs."
+          <Project title="Book Management System API" banner={go as string} date="Jul 2025" description="A simple API to manage books built with Go"  technologies={["Go","GORM"]}
+                   url="https://github.com/leartde/book-management-system"/>
+          <Project title="Hotel Management System" banner={internstellar as string} date="Jan 2024 - Apr 2024" description="Contributed on a system to manage hotel bookings during my internship at StarLabs."
                    technologies={["ASP.NET Core MVC","Bootstrap","Stripe","MailTrap"]}
                    url="https://github.com/MensurH/internstellar-hotel-management-system/tree/main/Domain"/>
         </div>
