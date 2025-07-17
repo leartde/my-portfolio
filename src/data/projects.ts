@@ -40,14 +40,14 @@ export const projects: Project[] = [
     date: "Jul 2025"
   },
   {
-    title:"Instagram Clone",
-    description:"A full stack Instagram clone built with Laravel and MongoDB",
-    technologies : ["Laravel", "MongoDB", "HTML", "CSS"],
+    title: "Instagram Clone",
+    description: "A full-stack Instagram clone built with Laravel and MongoDB, featuring secure authentication and authorization using Laravel's built-in systems.",
+    technologies: ["Laravel", "MongoDB", "HTML", "CSS"],
     banner: insta_clone as string,
-    url:"https://github.com/leartde/instagram_clone",
+    url: "https://github.com/leartde/instagram_clone",
     date: "Jul 2025",
   },
-  {
+ {
     title: "Wordle Clone",
     description: "A clone of the popular puzzle game 'Wordle' built with React.",
     technologies: ["React", "TypeScript"],
