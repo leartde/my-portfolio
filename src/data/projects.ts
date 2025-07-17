@@ -3,6 +3,7 @@ import techinsight from "../assets/techinsight.png";
 import wordle from "../assets/wordle.png";
 import internstellar from "../assets/internstellar.png";
 import snippetbox from "../assets/snippetbox.png"
+import insta_clone from "../assets/insta_clone.png"
 
 export type Project = {
   title: string;
@@ -37,6 +38,14 @@ export const projects: Project[] = [
     banner: snippetbox as string,
     url: "https://github.com/leartde/snippetbox",
     date: "Jul 2025"
+  },
+  {
+    title:"Instagram Clone",
+    description:"A full stack Instagram clone built with Laravel and MongoDB",
+    technologies : ["Laravel", "MongoDB", "HTML", "CSS"],
+    banner: insta_clone as string,
+    url:"https://github.com/leartde/instagram_clone",
+    date: "Jul 2025",
   },
   {
     title: "Wordle Clone",
