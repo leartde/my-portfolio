@@ -4,6 +4,7 @@ import wordle from "../assets/wordle.png";
 import internstellar from "../assets/internstellar.png";
 import snippetbox from "../assets/snippetbox.png"
 import insta_clone from "../assets/insta_clone.png"
+import heart_health from "../assets/heart_health.png"
 
 export type Project = {
   title: string;
@@ -16,7 +17,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Jobsync",
+    title: "JobSync",
     description: "A modern job marketplace web application built with ASP.NET Core Web API, React.js, TypeScript, and TailwindCSS.",
     technologies: ["ASP.NET Core", "Entity Framework", "SQL Server", "Redis", "React", "TypeScript", "Tailwind", "Cloudinary", "JWT", "MailTrap"],
     banner: jobsync as string,
@@ -38,6 +39,14 @@ export const projects: Project[] = [
     banner: snippetbox as string,
     url: "https://github.com/leartde/snippetbox",
     date: "Jul 2025"
+  },
+  {
+    title: "Heart Health Predictor",
+    description: "A machine learning project with ML.NET using binary classification algorithms to predict whether a patient has heart disease based on the popular UCI Heart Disease dataset.",
+    technologies: ["ML.NET", "Logistic Regression", "Decision Trees", "ASP.NET Core", "SQL Server", "React", "TypeScript"],
+    banner: heart_health as string,
+    url: "https://github.com/leartde/HeartHealthPredictor",
+    date: "Sep 2025 - Nov 2025",
   },
   {
     title: "Instagram Clone",

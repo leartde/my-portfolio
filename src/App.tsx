@@ -47,16 +47,18 @@ function App() {
         className="lg:w-1/2 mx-auto py-8 px-4 space-y-6"
       >
 
-        <div className=" flex flex-col">
-          <h1 className="font-bold text-5xl ">
-            Hello, I'm Leart Dellova
-          </h1>
-          <p className="text-lg font-medium">
-            I'm a software developer passionate about C# and TypeScript, with a focus on full-stack apps using ASP.NET
-            Core and React. I'm also eager to explore new backend technologies and continuously expand my skill set.
-          </p>
+        <FadeInWhenVisible>
+          <div className=" flex flex-col">
+            <h1 className="font-bold text-5xl ">
+              Hello, I'm Leart Dellova
+            </h1>
+            <p className="text-lg font-medium">
+              I'm a software developer passionate about C# and TypeScript, with a focus on full-stack apps using ASP.NET
+              Core and React. I'm also eager to explore new technologies and continuously expand my skill set.
+            </p>
 
-        </div>
+          </div>
+        </FadeInWhenVisible>
 
 
         <FadeInWhenVisible>

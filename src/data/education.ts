@@ -1,5 +1,5 @@
 import ubt from "../assets/ubt.png";
-import digital_school from "../assets/digital-school.jpg"
+import digital_school from "../assets/digital_school.jpg"
 
 export type Education = {
   institution : string;
